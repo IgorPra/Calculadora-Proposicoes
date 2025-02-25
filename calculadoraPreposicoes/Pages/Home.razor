@@ -20,38 +20,50 @@
         </MudGrid>
     </MudItem>
 
-    <!-- Campo de texto para a expressão -->
-    <MudItem xs="12" sm="12">
-        <MudTextField @bind-Value="expressao.expressao"
-                      Label="Expressão"
-                      Variant="Variant.Outlined"
-                      FullWidth="true"
-                      ReadOnly="true"
-                      Class="mt-4" />
-    </MudItem>
+    <EditForm class="d-flex flex-column align-items-center w-100" EditContext="context" OnValidSubmit="calcularTabelaVerdade">
 
+        <MudGrid Class="d-flex align-items-center w-100">
+            <MudItem xs="12" sm="11">
+                <MudTextField @bind-Value="expressao.expressao"
+                              For="(()=>expressao.expressao)"
+                              Label="Expressão"
+                              Variant="Variant.Outlined"
+                              FullWidth="true"
+                              ReadOnly="true"
+                              Class="mt-4" />
+            </MudItem>
+            <MudItem xs="12" sm="1" Class="d-flex justify-center align-items-center">
+                <MudIconButton OnClick="apagarCaractere"
+                               Icon="@Icons.Material.Filled.Backspace"
+                               Variant="Variant.Filled"
+                               Color="Color.Warning"
+                               Size="Size.Large"
+                               Class="p-2" />
+            </MudItem>
+        </MudGrid>
 
-    <MudGrid Class="mt-4" Spacing="1" Justify="Justify.Center">
-        <!-- Botão para apagar o último caractere -->
-        <MudItem xs="12" sm="2">
-            <MudButton OnClick="apagarCaractere"
-                       Variant="Variant.Filled"
-                       Color="Color.Error"
-                       FullWidth="true">
-                Apagar
-            </MudButton>
-        </MudItem>
+        <MudGrid Class="mt-4 w-100" Spacing="2" Justify="Justify.Center">
+            <MudItem xs="12" sm="2">
+                <MudButton OnClick="apagar"
+                           Variant="Variant.Filled"
+                           Color="Color.Error"
+                           FullWidth="true">
+                    Apagar Expressão
+                </MudButton>
+            </MudItem>
 
-        <!-- Botão de calcular -->
-        <MudItem xs="12" sm="2">
-            <MudButton OnClick="calcularTabelaVerdade"
-                       Variant="Variant.Filled"
-                       Color="Color.Primary"
-                       FullWidth="true">
-                Calcular
-            </MudButton>
-        </MudItem>
-    </MudGrid>
+            <MudItem xs="12" sm="2">
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           FullWidth="true">
+                    Calcular Expressão
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+
+    </EditForm>
+
 
     <!-- Exibição da tabela verdade -->
     @if (tabelaVerdade?.Count > 0)

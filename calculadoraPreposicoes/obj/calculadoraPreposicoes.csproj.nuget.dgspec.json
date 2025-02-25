@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj": {}
+    "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj": {
+    "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj",
         "projectName": "calculadoraPreposicoes",
-        "projectPath": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj",
-        "packagesPath": "C:\\Users\\IgorPracianoThomaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\obj\\",
+        "projectPath": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\calculadoraPreposicoes.csproj",
+        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\IgorPracianoThomaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,6 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://alexandrecavaleiro.pkgs.visualstudio.com/KCSCore/_packaging/KCSCore/nuget/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,8 +45,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -63,13 +63,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.13, )",
+              "version": "[8.0.10, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )",
+              "version": "[8.0.13, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

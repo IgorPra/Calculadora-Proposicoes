@@ -1,39 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\obj\\Debug\\net8.0\\scopedcss\\bundle\\calculadoraPreposicoes.styles.css",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\obj\\Debug\\net8.0\\compressed\\s5fakntb36.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\obj\\Debug\\net8.0\\scopedcss\\bundle\\calculadoraPreposicoes.styles.css",
       "PackagePath": "staticwebassets\\calculadoraPreposicoes.styles.css"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\IgorPracianoThomaz\\source\\repos\\calculadoraPreposicoes\\calculadoraPreposicoes\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Rafael\\Source\\Repos\\rcacau\\Calculadora-Proposicoes\\calculadoraPreposicoes\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
@@ -47,10 +51,6 @@
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.calculadoraPreposicoes.props",
       "PackagePath": "buildTransitive\\calculadoraPreposicoes.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.calculadoraPreposicoes.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.calculadoraPreposicoes.Microsoft.AspNetCore.StaticWebAssets.props",

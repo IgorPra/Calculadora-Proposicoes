@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "calculadoraPreposicoes",
   "resources": {
-    "hash": "sha256-QZkyEbA4IomX1pYkqzJ4i5Fmsxpx74ENE8PywmkMKP4=",
+    "hash": "sha256-MZ2VQfhL6W6hzNPn3OgvKtHpDctEERVj47sYi3Hi9CY=",
     "jsModuleNative": {
-      "dotnet.native.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
+      "dotnet.native.8.0.13.oyhcxn5z2x.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.js": "sha256-13vqU3hueOALvSTEM8xnJkJj2exVJYtNc1KZelMCDf0="
+      "dotnet.runtime.8.0.13.mq4vbaauo3.js": "sha256-13vqU3hueOALvSTEM8xnJkJj2exVJYtNc1KZelMCDf0="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-XhsharnkthjahGEiBkFjCLc/87/Tecti9860TIEq0H0="
@@ -16,7 +16,6 @@
       "icudt_EFIGS.dat": "sha256-8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
-    "coreAssembly": {},
     "assembly": {
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-g81inugSrrLKEtyxg9JkSxiBc3dly3FZcTKaz72rU/U=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-4/ecRnxEzB060rvNFk3n/GL1s3361WaHeLmfoea+Mp8=",
@@ -213,10 +212,10 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "calculadoraPreposicoes.wasm": "sha256-4BWrvdcj7IYzmpk/JcT3u8R3MBXQQLknk7vYwikT2nU="
+      "calculadoraPreposicoes.wasm": "sha256-e1ZfF2LvgR9AWNlduCe4ODir5UihEHqRKa9y4UqP0m0="
     },
     "pdb": {
-      "calculadoraPreposicoes.pdb": "sha256-IVIw3XHZYcixjhS6YLy3zXp8lC9PTVBND3TZmDMNOvQ="
+      "calculadoraPreposicoes.pdb": "sha256-RxzGNO3qUB+ekmvZmx1XEZT8kvb3McqdhdN886P/m1Y="
     }
   },
   "cacheBootResources": true,

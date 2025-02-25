@@ -1,14 +1,24 @@
 ﻿using calculadoraPreposicoes.VM;
+using Microsoft.AspNetCore.Components.Forms;
 using MudBlazor;
 
 namespace calculadoraPreposicoes.Pages
 {
     public partial class Home
     {
-        private Expressao expressao = new Expressao();
+        private EditContext context;
+        private Expressao expressao;
         private List<string> colunasTabela = new();
         private List<List<string>> tabelaVerdade;
         private int cont;
+
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            expressao = new Expressao();
+            context = new EditContext(expressao);
+            context.OnValidationRequested += (sender, e) => Console.WriteLine("Validação acionada!");
+        }
         private void adicionarCaractere(string caractere)
         {
             expressao.expressao += caractere;
@@ -22,48 +32,59 @@ namespace calculadoraPreposicoes.Pages
             }
         }
 
+        private void apagar()
+        {
+            if (!string.IsNullOrEmpty(expressao.expressao) && expressao.expressao.Length > 0)
+            {
+                expressao.expressao = "";
+            }
+        }
+
         private void calcularTabelaVerdade()
         {
-            // Identifica as proposições únicas
-            var proposicoes = new HashSet<string>();
-            foreach (var c in expressao.expressao)
+            if (context.Validate())
             {
-                if (char.IsLetter(c))
+                // Identifica as proposições únicas
+                var proposicoes = new HashSet<string>();
+                foreach (var c in expressao.expressao)
                 {
-                    proposicoes.Add(c.ToString());
-                }
-            }
-
-            var proposicoesOrdenadas = proposicoes.OrderBy(p => p).ToList();
-            colunasTabela = new List<string>(proposicoesOrdenadas) { expressao.expressao }; // Mantém a ordem correta
-
-            // Gera todas as combinações de valores verdade
-            int linhas = (int)Math.Pow(2, proposicoes.Count);
-            tabelaVerdade = new List<List<string>>();
-
-
-            for (int i = 0; i < linhas; i++)
-            {
-                var valores = new Dictionary<string, bool>();
-                for (int j = 0; j < proposicoes.Count; j++)
-                {
-                    valores[proposicoesOrdenadas[j]] = (i & (1 << (proposicoes.Count - j - 1))) != 0; // Ajuste na ordem das proposições
+                    if (char.IsLetter(c))
+                    {
+                        proposicoes.Add(c.ToString());
+                    }
                 }
 
-                // Avalia a expressão para cada combinação
-                var resultado = AvaliarExpressao(expressao.expressao, valores);
+                var proposicoesOrdenadas = proposicoes.OrderBy(p => p).ToList();
+                colunasTabela = new List<string>(proposicoesOrdenadas) { expressao.expressao }; // Mantém a ordem correta
 
-                // Adiciona a linha à tabela
-                var linha = proposicoesOrdenadas.Select(p => valores[p].ToString()).ToList();
-                linha.Add(resultado.ToString());
-                tabelaVerdade.Add(linha);
+                // Gera todas as combinações de valores verdade
+                int linhas = (int)Math.Pow(2, proposicoes.Count);
+                tabelaVerdade = new List<List<string>>();
+
+
+                for (int i = 0; i < linhas; i++)
+                {
+                    var valores = new Dictionary<string, bool>();
+                    for (int j = 0; j < proposicoes.Count; j++)
+                    {
+                        valores[proposicoesOrdenadas[j]] = (i & (1 << (proposicoes.Count - j - 1))) != 0; // Ajuste na ordem das proposições
+                    }
+
+                    // Avalia a expressão para cada combinação
+                    var resultado = AvaliarExpressao(expressao.expressao, valores);
+
+                    // Adiciona a linha à tabela
+                    var linha = proposicoesOrdenadas.Select(p => valores[p].ToString()).ToList();
+                    linha.Add(resultado.ToString());
+                    tabelaVerdade.Add(linha);
+                }
+
+                tabelaVerdade.Add(colunasTabela);
+
+                cont = colunasTabela.Count;
+                tabelaVerdade.Reverse(); // Apenas inverte as linhas, mantendo a ordem das colunas correta
+                StateHasChanged();
             }
-
-            tabelaVerdade.Add(colunasTabela);
-
-            cont = colunasTabela.Count;
-            tabelaVerdade.Reverse(); // Apenas inverte as linhas, mantendo a ordem das colunas correta
-            StateHasChanged();
         }
 
 
